@@ -1,0 +1,64 @@
+.atcp-popup {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px 0 #ccc;
+    height: 200px;
+    padding: 1rem;
+    position: fixed;
+    right: 1rem;
+    width: 400px;
+    z-index: 999999;
+}
+
+.atcp-popup--content-left {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+    width: 100%;
+}
+
+.atcp-popup--content-left__content {
+    padding-left: 1rem;
+}
+
+.atcp-popup--content-left__actions {
+    align-self: end;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    width: 100%;
+}
+
+.atcp-popup--content-bg {
+    display: grid;
+    height: 100%;
+}
+
+.atcp-popup--content-bg__actions a,
+.atcp-popup--content-left__actions a {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.atcp-popup--content-bg__actions a:hover,
+.atcp-popup--content-left__actions a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.atcp-popup--content-bg__img {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.atcp-popup--content-bg__img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
